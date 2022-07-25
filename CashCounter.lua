@@ -11,6 +11,8 @@ Frame.BackgroundColor3 = Color3.fromRGB(0, 157, 255)
 Frame.BorderColor3 = Color3.fromRGB(103, 103, 103)
 Frame.Position = UDim2.new(0.127400771, 0, 0.441073507, 0)
 Frame.Size = UDim2.new(0, 150, 0, 45)
+Frame.Active = true
+Frame.Draggable = true
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 174, 255)
@@ -32,9 +34,8 @@ TextLabel_2.Text = "Cash Counter"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 24.000
 
--- Scripts:
 
-local function OCWQ_fake_script() -- TextLabel.LocalScript 
+local function OCWQ_fake_script() 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	while wait() do
